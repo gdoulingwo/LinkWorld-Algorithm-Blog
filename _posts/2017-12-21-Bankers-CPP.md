@@ -1,5 +1,5 @@
 ---
-# title: 操作系统银行家算法与C++模拟实现-Huangshunq
+title: 操作系统银行家算法与C++模拟实现
 date: 2017-12-20 11:56:00
 ---
 # 银行家算法
@@ -374,3 +374,9 @@ void main()
 ![BankersAlgorithm1](https://gdoulingwo.github.io/LinkWorld-Algorithm-Blog/images/bankers/BankersAlgorithm1.png)
 
 ![BankersAlgorithm2](https://gdoulingwo.github.io/LinkWorld-Algorithm-Blog/images/bankers/BankersAlgorithm2.png)
+
+## 参考资料
+
+《计算机操作系统（第四版）》
+
+[银行家算法实验](https://wenku.baidu.com/view/7a4d732ce2bd960590c677a7.html)
