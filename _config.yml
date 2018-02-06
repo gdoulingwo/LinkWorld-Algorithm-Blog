@@ -1,7 +1,9 @@
 # ----------- CONFIGURABLE START -----------
 title:            "LinkWorld Algorithm Blog"
 description:      "Just do it."
+# Github Page地址。
 url:              https://gdoulingwo.github.io/LinkWorld-Algorithm-Blog # Site url, without a slash at the end.
+# url:              "http://127.0.0.1:4000" # 测试用地址
 signoff:          "LinkWorld" # Your name
 facebook_appid:   # APP ID for like button, remove from /_includes/share.html if unwanted.
 google_analytics: # Set tracking, remove from /javascripts/basic.js if unwanted.

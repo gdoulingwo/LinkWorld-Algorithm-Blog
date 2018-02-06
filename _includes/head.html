@@ -13,7 +13,16 @@
   <meta content="{{ site.description }}" property='og:description' />
   <meta content="blog" property="og:type" />
 {% endif %}
-<!-- - -->
+<!-- 数学公式 -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      inlineMath: [['$','$']]
+    }
+  });
+</script>
 
 {% if site.google_analytics %}
 <script>
