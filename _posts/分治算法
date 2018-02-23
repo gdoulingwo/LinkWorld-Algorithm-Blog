@@ -1,0 +1,29 @@
+#!/usr/bin/python
+import os
+import sys
+import time
+def log(msg):
+  print(“[%s] %s” % (time.asctime(), msg))
+class csplitter:
+  def _init_(self,filename):
+    self.buf = open(filename,”rb”)).read()
+    self.block_size = 256
+  def aplit(self,directory):
+    blocks = len(sef.buf) / self.block_size
+    for i in xrange(1,blocks):
+      buf = self.buf[:i*self.block_size]
+      path = os.path.join(directory,”block_%d” % i)
+      log(“writing file %s for block %d (until offset 0x%s)” % \(path,i,self.bolk_size * i))
+      f = open(path,”wb”)
+      f.write(buf)
+      f.close()
+def main(in_path,out_path):
+  splitter = csplitter(in_path)
+  splitter.split(out_path)
+def usage():
+  print(“usage: “,sys.argv[0],”<in file> <directory>”)
+if _name_ == “_main_”:
+  if len(sys.argv) !=3:
+    usage()
+  else:
+    main(sys.arbv[1],sys.argv[2])
