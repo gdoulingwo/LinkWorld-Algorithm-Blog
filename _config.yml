@@ -11,7 +11,7 @@ share:            false # Turn on twitter and facebook share buttons
 
 # Comments
 disqus_shortname:   Notzuonotdied
-comments:           true
+comments:           false
 
 links:
   - name:         Posts
