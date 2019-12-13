@@ -14,12 +14,31 @@
   <meta content="blog" property="og:type" />
 {% endif %}
 <!-- 数学公式 -->
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     tex2jax: {
       skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
       inlineMath: [['$','$']]
+    }
+  });
+</script> -->
+
+<!-- 更新数学公式插件源和配置，上面的 cdn 官方不打算维护了，所以换个源。再增加一些配置项（兼容原来配置），方便输入公式 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    config: ["MMLorHTML.js"],
+    jax: ["input/TeX","input/MathML","input/AsciiMath","output/HTML-CSS","output/NativeMML", "output/PreviewHTML"],
+    extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js", "fast-preview.js", "AssistiveMML.js", "a11y/accessibility-menu.js"],
+    TeX: {
+      extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+    },
+    tex2jax: {
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      inlineMath: [ ['$','$'] ],
+      displayMath: [ ['$$','$$'], ['\\','\\'] ],
+      processEnvironments: true
     }
   });
 </script>
